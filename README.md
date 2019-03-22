@@ -6,4 +6,10 @@ Para usá-lo, basta adicionar uma entrada no arquivo crontab da seginte maneira:
 
 > $ sudo echo '0 */1 * * *     [usuario_so]     /usr/bin/python2.7 [caminho_do_script]auth_wifi_ufpi.py [usuario_ufpi] [senha_ufpi] [driver_gecko_path] >/dev/null 2>&1' > /etc/crontab
  
+ Não esquecer de substituir os parâmetros no comando:
+ * [usuario_so]
+ * [caminho_do_script]
+ * [usuario_ufpi]
+ * [driver_gecko_path]
+ 
 A cada uma hora, o script será executado.
