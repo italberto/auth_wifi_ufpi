@@ -16,3 +16,7 @@ Para usá-lo, basta adicionar uma entrada no arquivo crontab da seginte maneira:
 A cada uma hora, o script será executado.
 
 Use o link a seguir para baixar a última versão: [latest](https://github.com/italberto/auth_wifi_ufpi/releases/download/0.1/auth_wifi_ufpi.bin).
+
+**OBS:** Se for usar a distribuição em vez do código fonte, use o código a seguir para inserir a entrada no cron:
+
+> $ sudo echo '0 */1 * * *     [usuario_so]     /usr/bin/python2.7 [caminho_do_script]auth_wifi_ufpi.bin [usuario_ufpi] [senha_ufpi] >/dev/null 2>&1' > /etc/crontab
