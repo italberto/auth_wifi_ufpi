@@ -10,6 +10,7 @@ Para usá-lo, basta adicionar uma entrada no arquivo crontab da seginte maneira:
  * [usuario_so]
  * [caminho_do_script]
  * [usuario_ufpi]
+ * [senha_ufpi]
  * [driver_gecko_path]
  
 A cada uma hora, o script será executado.
