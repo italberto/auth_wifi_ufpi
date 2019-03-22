@@ -14,3 +14,5 @@ Para usá-lo, basta adicionar uma entrada no arquivo crontab da seginte maneira:
  * [driver_gecko_path]
  
 A cada uma hora, o script será executado.
+
+Use o link a seguir para baixar a última versão: [latest](https://github.com/italberto/auth_wifi_ufpi/releases/download/0.1/auth_wifi_ufpi.bin).
