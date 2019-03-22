@@ -4,7 +4,11 @@ Este simples script tem o objetivo de criar um mecanismo para manter uma máquin
 
 Para usá-lo, basta adicionar uma entrada no arquivo crontab da seginte maneira:
 
-> $ sudo echo '0 */1 * * *     [usuario_so]     /usr/bin/python2.7 [caminho_do_script]auth_wifi_ufpi.py [usuario_ufpi] [senha_ufpi] [driver_gecko_path] >/dev/null 2>&1' > /etc/crontab
+> # echo '0 */1 * * *     [usuario_so]     /usr/bin/python2.7 [caminho_do_script]auth_wifi_ufpi.py [usuario_ufpi] [senha_ufpi] [driver_gecko_path] >/dev/null 2>&1' > /etc/crontab
+ 
+Use o comando a seguir para recarregar o arquivo do cron.
+ 
+ > # service cron reload
  
  Não esquecer de substituir os parâmetros no comando:
  * [usuario_so]
@@ -19,4 +23,6 @@ Use o link a seguir para baixar a última versão: [latest](https://github.com/i
 
 **OBS:** Se for usar a distribuição em vez do código fonte, use o código a seguir para inserir a entrada no cron:
 
-> $ sudo echo '0 */1 * * *     [usuario_so]     /usr/bin/python2.7 [caminho_do_script]auth_wifi_ufpi.bin [usuario_ufpi] [senha_ufpi] >/dev/null 2>&1' > /etc/crontab
+> # echo '0 */1 * * *     [usuario_so]     /usr/bin/python2.7 [caminho_do_script]auth_wifi_ufpi.bin [usuario_ufpi] [senha_ufpi] >/dev/null 2>&1' > /etc/crontab
+
+ > # service cron reload
